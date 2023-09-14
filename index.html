@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/bootstrap-min.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header style="height: 60px;" class=" position-sticky top-0 z-2 d-flex w-100 text-light bg-success align-items-center justify-content-between">
+        <h1 class="fs-5 fw-medium  ps-3">Sticker API</h1>
+        <nav class="d-flex align-items-center">
+          <ul class="pe-3 d-flex gap-5 mt-2 ">
+            <li><a target="_blank" class="fw-medium" href="https://www.linkedin.com/in/aziz-azizli-3ba24a28a/">Linkedin </a></li>
+            <li><a target="_blank" class="fw-medium"   href="https://github.com/AzizzAzizli">GitHub</a></li>
+  
+          </ul>
+        </nav>
+
+      </header>
+
+<main class="w-100">
+<div class="container w-100 ">
+    <div class="searchInput pt-5 d-flex justify-content-center w-100   gap-0 gap-sm-3">
+        <input    type="search" class="mainInput rounded-5 fs-5 p-2 fw-medium text-secondary  " placeholder="Search..."> 
+        
+        <input type="number" class="limitInput rounded-5 p-1  "  placeholder="limit" min="0" max="100">
+
+        <div class="searchDiv p-3 bg-light rounded-circle d-flex justify-content-center align-items-center "><img src="./src/icon/icon.svg"  alt="searchIcon"></div>
+        
+    </div>
+    <div class="contents pt-5 d-flex flex-wrap w-100 gap-4 justify-content-around">
+
+    </div>
+    <p id="errorMessage"  class="fs-1  pt-5 fw-medium d-none text-center">Invalid entry</p>
+</div>
+
+
+</main>
+
+    <script src="./src/js/jquery-3-7-1-min.js"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

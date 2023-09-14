@@ -1,0 +1,103 @@
+header {
+    background: linear-gradient(45deg, #f06, #00bcd4, #8b00ff, #f06);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+
+      && a{
+    color: white;
+    &&:hover{
+        color: black;
+    }
+}
+&& h1:hover{
+transform: scale(1.1);
+cursor: pointer;
+color: black;
+}
+}
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  main {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+   
+    min-height: 100vh; 
+    height: max-content;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .searchDiv{
+    transition: all 0.5s;
+  
+    &:hover {
+      cursor: pointer;
+  
+      transform: rotate(360deg);
+  
+      outline: 2px solid #9c27b0;
+      box-shadow: 0 0 5px rgba(161, 32, 184, 0.756);
+    }
+  }
+
+  .mainInput {
+    border: none;
+    outline: #3498db;
+    &&::placeholder {
+      color: rgb(72, 69, 69);
+      font-weight: normal;
+      font-size: normal;
+    }
+    &&:hover {
+      outline: 2px solid #9c27b0;
+      box-shadow: 0 0 5px rgba(161, 32, 184, 0.756);
+    }
+  }
+  .carDiv{
+    border-color: #9c27b0 ;
+   
+   &&:hover{
+    box-shadow: 0 0 10px 10px #ac49bd ;
+    cursor: pointer;
+  
+   }
+  }
+  .limitInput{
+ width: auto;
+  
+    border: none;
+    outline: #3498db;
+    &&::placeholder {
+      color: rgb(72, 69, 69);
+      font-weight: normal;
+      font-size: normal;
+    }
+    &&:hover {
+      outline: 2px solid #9c27b0;
+      box-shadow: 0 0 5px rgba(161, 32, 184, 0.756);
+    }
+
+  }
+  #errorMessage {
+    color: #333333;
+  }
+  
